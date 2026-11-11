@@ -29,7 +29,9 @@ export class RegisterUser {
 
     
      const userData = new User({
+        institucion: user.institucion,
         name: user.name,
+        genero: user.genero,
         email: user.email,
         passwordHash: passwordData
      })
