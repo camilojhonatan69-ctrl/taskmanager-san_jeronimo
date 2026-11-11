@@ -74,11 +74,18 @@ body {
     transition: 0.2s;
 }
 
+
+ 
+
 .button-primary {
     background-color: var(--color-primary);
 
-    color: white;
+    color:white;
 }
+body {
+    background-color: lightblue;
+}
+
 
 .button-primary:hover {
     background-color: var(--color-primary-dark);

@@ -33,9 +33,12 @@ export function showRegisterView(container, presenter) {
                             name="institucion"
                             required
                         >
-                           <option value=""> Seleccione una opción </option>
-                               <option value="san jose">san jose </option>
-                               <option value="san jeronimo">san jeronimo</option>
+                           <option value=""> Seleccione una opción
+                             </option>
+                               <option value="san jose">san jose
+                                </option>
+                               <option value="san jeronimo">san jeronimo
+                               </option>
                                <option value="otros">otros</option>
                                
                          </select>
@@ -91,8 +94,7 @@ export function showRegisterView(container, presenter) {
                            <option value=""> Seleccione una opción </option>
                                <option value="masculino">Masculino</option>
                                <option value="femenino">Femenino</option>
-                               <option value="no-binario">No binario</option>
-                               <option value="prefiero-no-decirlo">Prefiero no decirlo</option>
+                               <option value="Otros">Otros</option>
                          </select>
 
                     </div>
