@@ -31,9 +31,11 @@ export class RegisterUser {
      const userData = new User({
         institucion: user.institucion,
         name: user.name,
+        usuario: user.usuario,
         genero: user.genero,
         email: user.email,
-        passwordHash: passwordData
+        passwordHash: passwordData,
+        activo: user.activo
      })
 
        console.log("el nomre del from es:",user.name);
