@@ -12,7 +12,8 @@ export function renderNavbar(container, navigate) {
           <a class="nav-link active" aria-current="page" href="#" data-view="home">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#" data-view="classes">clases</a>
+          <a class="nav-link active" aria-current="page" href="#" 
+          data-view="classes">clases</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Link</a>
@@ -42,13 +43,12 @@ export function renderNavbar(container, navigate) {
 `; 
 
 container.addEventListener("click", (event) =>{
-    const  link=event.closest("[data-view]");
+  console.log("entre en el navar"); 
+    const  link=event.target.closest("[data-view]");
 
-    if(link) return;
-
+    if(!link) return;
+console.log("entre en el navar222"); 
     event.preventDefault();
-
-
     navigate(link.dataset.view);
-} )
+} ); 
 }

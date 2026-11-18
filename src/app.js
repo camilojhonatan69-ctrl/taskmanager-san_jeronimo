@@ -37,12 +37,16 @@ const app = document.getElementById("app");
 const navbarContainer = document.getElementById("navbar-container");
 
 renderNavbar(navbarContainer, (view) =>{
+    console.log("recii respuesta"); 
     switch (view){
         case "home":
+            console.log("home"); 
             showhome(app)
-            break
-        case "class":
-            showClassView(app, classPresenter)   
+            break; 
+        case "classes":
+            console.log("class"); 
+            showClassView(app, classPresenter);
+            break;  
     }
 })
 /*

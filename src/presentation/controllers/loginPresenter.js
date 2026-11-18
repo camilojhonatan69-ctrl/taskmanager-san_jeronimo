@@ -32,16 +32,15 @@ export class LoginPresenter {
                     credentials
                 );
             console.log("Usuario autenticado:",user);
+            localStorage.setItem("userActive", JSON.stringify(user));
             
-            showhome(
-                this.container,
-                this.classPresenter
-            );
+            showhome(this.container,this.classPresenter);
         
         } catch (error) {
 
             showLoginMessage(
-                error.message
+                error.message,
+                "danger"
             );
         }
     }
