@@ -20,6 +20,7 @@ import { CreateClass } from "./domain/useCases/CreateClass.js";
 import {renderNavbar} from "./presentation/components/navbar.js";
 import {showhome} from "./presentation/views/home.js";
 import { showClassView } from "./presentation/views/classView.js";
+import { showarquitectura } from "./presentation/views/arquitectura.js";
 
 const passwordHasher = new PasswordHasher();
 
@@ -47,6 +48,7 @@ renderNavbar(navbarContainer, (view) =>{
             console.log("class"); 
             showClassView(app, classPresenter);
             break;  
+        
     }
 })
 /*
