@@ -21,7 +21,7 @@ export function renderNavbar(container, navigate) {
             materia
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Arquitectuta</a></li>   
+            <li><a class="dropdown-item" href="#" data-view = "arquitectura">Arquitectuta</a></li>   
             
           </ul>
         </li>
@@ -44,5 +44,7 @@ container.addEventListener("click", (event) =>{
 console.log("entre en el navar222"); 
     event.preventDefault();
     navigate(link.dataset.view);
+
+
 } ); 
 }

@@ -13,6 +13,7 @@ import { showLoginMessage } from "../views/loginView.js";
 import { showRegisterView } from "../views/registerView.js";
 import { RegisterPresenter } from "./registerPresenter.js";
 import { showhome } from "../views/home.js";
+import { showArquiView } from "../views/arquitectura.js";
 
 export class LoginPresenter {
 

@@ -20,7 +20,10 @@ import { CreateClass } from "./domain/useCases/CreateClass.js";
 import {renderNavbar} from "./presentation/components/navbar.js";
 import {showhome} from "./presentation/views/home.js";
 import { showClassView } from "./presentation/views/classView.js";
-import { showarquitectura } from "./presentation/views/arquitectura.js";
+
+import { showArquiView } from "./presentation/views/arquitectura.js";
+
+
 
 const passwordHasher = new PasswordHasher();
 
@@ -47,7 +50,11 @@ renderNavbar(navbarContainer, (view) =>{
         case "classes":
             console.log("class"); 
             showClassView(app, classPresenter);
-            break;  
+            break;
+        case "arquitectura":
+            console.log("arquitectura"); 
+            showArquiView(app, classPresenter);
+            break;        
         
     }
 })
